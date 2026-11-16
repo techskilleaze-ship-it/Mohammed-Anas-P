@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Mohammed Anas P — IT Support & Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#070a08;color:#e6ede8;font-family:'Space Grotesk',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#39e58c;text-decoration:none}
+a:hover{color:#8bf5bb}
+::selection{background:#39e58c;color:#070a08}
+@keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes scan{0%{top:-10%}100%{top:110%}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(57,229,140,.6)}50%{box-shadow:0 0 0 8px rgba(57,229,140,0)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+</style>
+</helmet>
+<div style="position:relative;min-height:100vh;overflow-x:hidden;background:#070a08;background-image:linear-gradient(rgba(57,229,140,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(57,229,140,.045) 1px,transparent 1px);background-size:56px 56px">
+  <div ref="{{ glowRef }}" style="position:fixed;left:0;top:0;width:520px;height:520px;margin:-260px 0 0 -260px;border-radius:50%;background:radial-gradient(circle,rgba(57,229,140,.13),transparent 65%);pointer-events:none;z-index:0;transition:transform .15s ease-out;transform:translate(50vw,30vh)"></div>
+
+  <nav style="position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);background:rgba(7,10,8,.72);border-bottom:1px solid rgba(57,229,140,.12)">
+    <div style="max-width:1180px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+      <a href="#top" style="font-family:'JetBrains Mono',monospace;font-size:15px;color:#e6ede8;display:flex;align-items:center;gap:8px"><span style="color:#39e58c">&gt;</span>anas.p<span style="color:#39e58c;animation:blink 1s steps(1) infinite">_</span></a>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:13px">
+        <a href="#about" style="color:#9fb0a5" style-hover="color:#39e58c">01.about</a>
+        <a href="#experience" style="color:#9fb0a5" style-hover="color:#39e58c">02.experience</a>
+        <a href="#projects" style="color:#9fb0a5" style-hover="color:#39e58c">03.projects</a>
+        <a href="#credentials" style="color:#9fb0a5" style-hover="color:#39e58c">04.credentials</a>
+        <a href="#cv" style="color:#9fb0a5" style-hover="color:#39e58c">05.cv</a>
+        <a href="#contact" style="color:#9fb0a5" style-hover="color:#39e58c">06.contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="top" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:88px 28px 72px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:64px;align-items:center">
+    <div data-reveal="1" style="display:flex;flex-direction:column;gap:26px">
+      <div style="display:inline-flex;align-self:flex-start;align-items:center;gap:10px;padding:7px 14px;border:1px solid rgba(57,229,140,.3);border-radius:999px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c;background:rgba(57,229,140,.06)">
+        <span style="width:8px;height:8px;border-radius:50%;background:#39e58c;animation:pulse 2s infinite"></span>Open to opportunities · Doha, Qatar
+      </div>
+      <h1 style="margin:0;font-size:clamp(46px,7vw,88px);line-height:.95;letter-spacing:-.035em;font-weight:700">Mohammed<br><span style="color:#39e58c">Anas P</span></h1>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:clamp(16px,2vw,20px);color:#c9d6ce;min-height:1.5em">
+        <span style="color:#5d7466">$ role --is </span><span style="color:#e6ede8">{{ typed }}</span><span style="color:#39e58c;animation:blink 1s steps(1) infinite">▌</span>
+      </div>
+      <p style="margin:0;max-width:540px;font-size:18px;line-height:1.65;color:#9fb0a5;text-wrap:pretty">IT Support &amp; Administration professional with ~1 year managing daily IT operations, user access and HR documentation in Doha — backed by an MCA and hands-on Python, Flask, SQL and machine-learning work.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:8px;max-width:560px;font-family:'JetBrains Mono',monospace;font-size:12px">
+        <span style="padding:6px 11px;border-radius:6px;border:1px solid rgba(57,229,140,.25);color:#c9d6ce">IT Support</span>
+        <span style="padding:6px 11px;border-radius:6px;border:1px solid rgba(57,229,140,.25);color:#c9d6ce">Network Troubleshooting</span>
+        <span style="padding:6px 11px;border-radius:6px;border:1px solid rgba(57,229,140,.25);color:#c9d6ce">Access Control</span>
+        <span style="padding:6px 11px;border-radius:6px;border:1px solid rgba(57,229,140,.25);color:#c9d6ce">HR Documentation</span>
+        <span style="padding:6px 11px;border-radius:6px;border:1px solid rgba(57,229,140,.25);color:#c9d6ce">Python · Flask</span>
+        <span style="padding:6px 11px;border-radius:6px;border:1px solid rgba(57,229,140,.25);color:#c9d6ce">SQL · Excel</span>
+      </div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap">
+        <a href="#projects" style="padding:15px 26px;background:#39e58c;color:#04120a;font-weight:600;border-radius:10px;font-size:15px;transition:transform .2s,box-shadow .2s" style-hover="transform:translateY(-2px);box-shadow:0 10px 30px rgba(57,229,140,.35);color:#04120a">View projects →</a>
+        <a href="mailto:aanu4655@gmail.com" style="padding:15px 26px;border:1px solid rgba(230,237,232,.2);color:#e6ede8;font-weight:500;border-radius:10px;font-size:15px;transition:border-color .2s" style-hover="border-color:#39e58c;color:#39e58c">Get in touch</a>
+        <a href="#cv" style="padding:15px 26px;border:1px solid rgba(57,229,140,.35);color:#39e58c;font-weight:500;border-radius:10px;font-size:15px;transition:background .2s" style-hover="background:rgba(57,229,140,.1);color:#39e58c">View CV</a>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(57,229,140,.15);border:1px solid rgba(57,229,140,.15);border-radius:14px;overflow:hidden;margin-top:10px;max-width:540px">
+        <div style="background:#0b100d;padding:18px 16px"><div style="font-size:30px;font-weight:700;color:#39e58c">1 yr</div><div style="font-size:12px;color:#8a9b90;font-family:'JetBrains Mono',monospace;margin-top:4px">IT operations</div></div>
+        <div style="background:#0b100d;padding:18px 16px"><div style="font-size:30px;font-weight:700;color:#39e58c">−40%</div><div style="font-size:12px;color:#8a9b90;font-family:'JetBrains Mono',monospace;margin-top:4px">equipment downtime</div></div>
+        <div style="background:#0b100d;padding:18px 16px"><div style="font-size:30px;font-weight:700;color:#39e58c">MCA</div><div style="font-size:12px;color:#8a9b90;font-family:'JetBrains Mono',monospace;margin-top:4px">2023 – 2025</div></div>
+      </div>
+    </div>
+    <div data-reveal="1" style="justify-self:center;position:relative;width:min(420px,100%);display:flex;flex-direction:column">
+      <div style="position:absolute;top:-16px;right:-16px;width:120px;height:120px;border-top:2px solid #39e58c;border-right:2px solid #39e58c;border-radius:0 22px 0 0;pointer-events:none"></div>
+      <div style="position:absolute;bottom:-16px;left:-16px;width:120px;height:120px;border-bottom:2px solid #39e58c;border-left:2px solid #39e58c;border-radius:0 0 0 22px;pointer-events:none"></div>
+      <div style="position:relative;aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:#0b100d;border:1px solid rgba(57,229,140,.25)">
+        <img src="assets/anas.jpeg" alt="Mohammed Anas P" style="{{ photoStyle }}">
+        <div style="{{ tintStyle }}"></div>
+        <div style="position:absolute;left:18px;bottom:16px;right:18px;display:flex;flex-direction:column;gap:2px">
+          <span style="font-size:22px;font-weight:700;color:#fff;letter-spacing:-.01em">Mohammed Anas P</span>
+          <span style="font-size:14px;color:#c9f7dc">IT Administrator · Crompton International</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div style="position:relative;z-index:1;border-top:1px solid rgba(57,229,140,.15);border-bottom:1px solid rgba(57,229,140,.15);background:#0a0f0c;overflow:hidden;padding:18px 0">
+    <div style="display:flex;width:max-content;animation:marquee 32s linear infinite;font-family:'JetBrains Mono',monospace;font-size:15px;color:#7f9486;gap:0">
+      <div style="display:flex;gap:44px;padding-right:44px"><span>Python</span><span style="color:#39e58c">✦</span><span>Flask</span><span style="color:#39e58c">✦</span><span>SQL · MySQL</span><span style="color:#39e58c">✦</span><span>Microsoft Excel</span><span style="color:#39e58c">✦</span><span>Network Troubleshooting</span><span style="color:#39e58c">✦</span><span>Access Control</span><span style="color:#39e58c">✦</span><span>Machine Learning</span><span style="color:#39e58c">✦</span><span>Data Preprocessing</span><span style="color:#39e58c">✦</span><span>HR Documentation</span><span style="color:#39e58c">✦</span></div>
+      <div style="display:flex;gap:44px;padding-right:44px"><span>Python</span><span style="color:#39e58c">✦</span><span>Flask</span><span style="color:#39e58c">✦</span><span>SQL · MySQL</span><span style="color:#39e58c">✦</span><span>Microsoft Excel</span><span style="color:#39e58c">✦</span><span>Network Troubleshooting</span><span style="color:#39e58c">✦</span><span>Access Control</span><span style="color:#39e58c">✦</span><span>Machine Learning</span><span style="color:#39e58c">✦</span><span>Data Preprocessing</span><span style="color:#39e58c">✦</span><span>HR Documentation</span><span style="color:#39e58c">✦</span></div>
+    </div>
+  </div>
+
+  <section id="about" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:110px 28px 40px">
+    <div data-reveal="1" style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px"><span style="font-family:'JetBrains Mono',monospace;color:#39e58c;font-size:15px">01</span><h2 style="margin:0;font-size:clamp(32px,4.5vw,52px);letter-spacing:-.03em">About &amp; core skills</h2><div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(57,229,140,.4),transparent)"></div></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:18px;font-size:18px;line-height:1.7;color:#a9b9af">
+        <p style="margin:0;text-wrap:pretty">I keep offices running smoothly — troubleshooting hardware, software and network issues, managing user access, and maintaining the IT records and documentation that keep systems organised and secure.</p>
+        <p style="margin:0;text-wrap:pretty">Alongside IT, I support HR operations: onboarding and offboarding, staff records and confidential document management. My technical foundation in <span style="color:#e6ede8">Python, SQL and Excel</span> lets me turn operational data into clear reporting.</p>
+        <p style="margin:0;color:#7f9486;font-family:'JetBrains Mono',monospace;font-size:14px">Languages — English · Hindi · Malayalam</p>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+        <div data-reveal="1" style="padding:22px;border:1px solid rgba(57,229,140,.14);border-radius:14px;background:rgba(11,16,13,.8);transition:border-color .3s,transform .3s" style-hover="border-color:rgba(57,229,140,.55);transform:translateY(-4px)"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c;margin-bottom:10px">// it_support</div><div style="color:#c9d6ce;line-height:1.6;font-size:15px">Hardware, software &amp; network troubleshooting, user support, system maintenance, access control</div></div>
+        <div data-reveal="1" style="padding:22px;border:1px solid rgba(57,229,140,.14);border-radius:14px;background:rgba(11,16,13,.8);transition:border-color .3s,transform .3s" style-hover="border-color:rgba(57,229,140,.55);transform:translateY(-4px)"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c;margin-bottom:10px">// records</div><div style="color:#c9d6ce;line-height:1.6;font-size:15px">IT documentation, records management, data accuracy, cleaning &amp; organisation</div></div>
+        <div data-reveal="1" style="padding:22px;border:1px solid rgba(57,229,140,.14);border-radius:14px;background:rgba(11,16,13,.8);transition:border-color .3s,transform .3s" style-hover="border-color:rgba(57,229,140,.55);transform:translateY(-4px)"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c;margin-bottom:10px">// data_tools</div><div style="color:#c9d6ce;line-height:1.6;font-size:15px">Microsoft Excel, SQL, MySQL, basic reporting</div></div>
+        <div data-reveal="1" style="padding:22px;border:1px solid rgba(57,229,140,.14);border-radius:14px;background:rgba(11,16,13,.8);transition:border-color .3s,transform .3s" style-hover="border-color:rgba(57,229,140,.55);transform:translateY(-4px)"><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c;margin-bottom:10px">// development</div><div style="color:#c9d6ce;line-height:1.6;font-size:15px">Python, Flask, data preprocessing, machine learning</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:90px 28px 40px">
+    <div data-reveal="1" style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px"><span style="font-family:'JetBrains Mono',monospace;color:#39e58c;font-size:15px">02</span><h2 style="margin:0;font-size:clamp(32px,4.5vw,52px);letter-spacing:-.03em">Experience</h2><div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(57,229,140,.4),transparent)"></div></div>
+    <div style="position:relative;display:flex;flex-direction:column;gap:22px;padding-left:34px;border-left:1px solid rgba(57,229,140,.25)">
+      <div data-reveal="1" style="position:relative;padding:30px;border:1px solid rgba(57,229,140,.16);border-radius:16px;background:rgba(11,16,13,.85);transition:border-color .3s" style-hover="border-color:rgba(57,229,140,.5)">
+        <span style="position:absolute;left:-42px;top:36px;width:14px;height:14px;border-radius:50%;background:#39e58c;animation:pulse 2s infinite"></span>
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline"><h3 style="margin:0;font-size:23px;letter-spacing:-.01em">IT Administrator <span style="color:#7f9486;font-weight:400">— IT Support &amp; Office Admin</span></h3><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c;padding:5px 10px;border:1px solid rgba(57,229,140,.3);border-radius:6px">12/2025 — Present</span></div>
+        <div style="margin-top:6px;color:#c9d6ce;font-size:16px">Crompton International · Doha, Qatar</div>
+        <ul style="margin:18px 0 0;padding-left:18px;color:#9fb0a5;line-height:1.75;font-size:16px;display:flex;flex-direction:column;gap:4px">
+          <li>Manage day-to-day IT operations and technical support for office employees.</li>
+          <li>Troubleshoot hardware, software and network issues; run routine system maintenance.</li>
+          <li>Maintain IT records, system documentation, user accounts and access permissions.</li>
+          <li>Support HR with onboarding/offboarding, staff records and confidential documents.</li>
+          <li>Prepare and organise datasets for basic reporting and management insights.</li>
+        </ul>
+      </div>
+      <div data-reveal="1" style="position:relative;padding:30px;border:1px solid rgba(57,229,140,.16);border-radius:16px;background:rgba(11,16,13,.85);transition:border-color .3s" style-hover="border-color:rgba(57,229,140,.5)">
+        <span style="position:absolute;left:-41px;top:37px;width:12px;height:12px;border-radius:50%;background:#070a08;border:1px solid #39e58c"></span>
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline"><h3 style="margin:0;font-size:23px;letter-spacing:-.01em">Python Development Intern</h3><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#9fb0a5;padding:5px 10px;border:1px solid rgba(230,237,232,.15);border-radius:6px">07/2025 — 08/2025</span></div>
+        <div style="margin-top:6px;color:#c9d6ce;font-size:16px">Cognifyz Technologies · Remote, India</div>
+        <ul style="margin:18px 0 0;padding-left:18px;color:#9fb0a5;line-height:1.75;font-size:16px;display:flex;flex-direction:column;gap:4px">
+          <li>Built Python-based applications and tasks focused on clean, maintainable code.</li>
+          <li>Recognised for coordination, communication and attention to detail.</li>
+        </ul>
+      </div>
+      <div data-reveal="1" style="position:relative;padding:30px;border:1px solid rgba(57,229,140,.16);border-radius:16px;background:rgba(11,16,13,.85);transition:border-color .3s" style-hover="border-color:rgba(57,229,140,.5)">
+        <span style="position:absolute;left:-41px;top:37px;width:12px;height:12px;border-radius:50%;background:#070a08;border:1px solid #39e58c"></span>
+        <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline"><h3 style="margin:0;font-size:23px;letter-spacing:-.01em">Python Developer Intern</h3><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#9fb0a5;padding:5px 10px;border:1px solid rgba(230,237,232,.15);border-radius:6px">12/2024 — 05/2025</span></div>
+        <div style="margin-top:6px;color:#c9d6ce;font-size:16px">G-TEC Computer Education · India</div>
+        <ul style="margin:18px 0 0;padding-left:18px;color:#9fb0a5;line-height:1.75;font-size:16px;display:flex;flex-direction:column;gap:4px">
+          <li>Developed a predictive maintenance system showing a <span style="color:#39e58c">40% reduction</span> in equipment downtime.</li>
+          <li>Built Flask applications for real-time monitoring and application functionality.</li>
+          <li>Took part in peer code reviews and QA to improve reliability and standards.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:90px 28px 40px">
+    <div data-reveal="1" style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px"><span style="font-family:'JetBrains Mono',monospace;color:#39e58c;font-size:15px">03</span><h2 style="margin:0;font-size:clamp(32px,4.5vw,52px);letter-spacing:-.03em">Selected projects</h2><div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(57,229,140,.4),transparent)"></div></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:20px">
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;padding:32px;border:1px solid rgba(57,229,140,.16);border-radius:18px;background:linear-gradient(160deg,rgba(57,229,140,.08),rgba(11,16,13,.9) 45%);transition:transform .35s,border-color .35s,box-shadow .35s" style-hover="transform:translateY(-6px);border-color:#39e58c;box-shadow:0 24px 60px -20px rgba(57,229,140,.35)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c">P/01 · featured</span><span style="font-size:22px;color:#39e58c">↗</span></div>
+        <h3 style="margin:0;font-size:28px;letter-spacing:-.02em">Predictive Maintenance System</h3>
+        <p style="margin:0;color:#9fb0a5;line-height:1.65;font-size:16px;text-wrap:pretty">Machine-learning system with data preprocessing and real-time monitoring for industrial equipment — demonstrated a 40% cut in downtime.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:12px"><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Python</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Flask</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">ML</span></div>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;padding:32px;border:1px solid rgba(57,229,140,.16);border-radius:18px;background:rgba(11,16,13,.9);transition:transform .35s,border-color .35s,box-shadow .35s" style-hover="transform:translateY(-6px);border-color:#39e58c;box-shadow:0 24px 60px -20px rgba(57,229,140,.35)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c">P/02</span><span style="font-size:22px;color:#39e58c">↗</span></div>
+        <h3 style="margin:0;font-size:28px;letter-spacing:-.02em">Phishing URL Detection</h3>
+        <p style="margin:0;color:#9fb0a5;line-height:1.65;font-size:16px;text-wrap:pretty">Supervised machine-learning model that flags potentially malicious URLs before users click them.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:12px"><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Python</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Supervised ML</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Security</span></div>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;padding:32px;border:1px solid rgba(57,229,140,.16);border-radius:18px;background:rgba(11,16,13,.9);transition:transform .35s,border-color .35s,box-shadow .35s" style-hover="transform:translateY(-6px);border-color:#39e58c;box-shadow:0 24px 60px -20px rgba(57,229,140,.35)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c">P/03</span><span style="font-size:22px;color:#39e58c">↗</span></div>
+        <h3 style="margin:0;font-size:28px;letter-spacing:-.02em">Online Auction System</h3>
+        <p style="margin:0;color:#9fb0a5;line-height:1.65;font-size:16px;text-wrap:pretty">Web application with secure authentication and real-time auction updates for buyers and sellers.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:12px"><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Web App</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Auth</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Real-time</span></div>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;padding:32px;border:1px solid rgba(57,229,140,.16);border-radius:18px;background:rgba(11,16,13,.9);transition:transform .35s,border-color .35s,box-shadow .35s" style-hover="transform:translateY(-6px);border-color:#39e58c;box-shadow:0 24px 60px -20px rgba(57,229,140,.35)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c">P/04</span><span style="font-size:22px;color:#39e58c">↗</span></div>
+        <h3 style="margin:0;font-size:28px;letter-spacing:-.02em">Smart Scholarship Management</h3>
+        <p style="margin:0;color:#9fb0a5;line-height:1.65;font-size:16px;text-wrap:pretty">Application for setting up scholarship schemes, tracking applications and verifying eligibility.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:auto;font-family:'JetBrains Mono',monospace;font-size:12px"><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Web App</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">SQL</span><span style="padding:5px 10px;border-radius:6px;background:rgba(57,229,140,.1);color:#8bf5bb">Workflow</span></div>
+      </div>
+    </div>
+    <div data-reveal="1" style="margin-top:26px;display:flex;justify-content:flex-end"><a href="https://github.com/Anasanu777" target="_blank" style="font-family:'JetBrains Mono',monospace;font-size:14px">→ more on github.com/Anasanu777</a></div>
+  </section>
+
+  <section id="credentials" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:90px 28px 40px">
+    <div data-reveal="1" style="display:flex;align-items:baseline;gap:16px;margin-bottom:48px"><span style="font-family:'JetBrains Mono',monospace;color:#39e58c;font-size:15px">04</span><h2 style="margin:0;font-size:clamp(32px,4.5vw,52px);letter-spacing:-.03em">Education &amp; certifications</h2><div style="flex:1;height:1px;background:linear-gradient(90deg,rgba(57,229,140,.4),transparent)"></div></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <div data-reveal="1" style="padding:28px;border-radius:16px;border:1px solid rgba(57,229,140,.16);background:rgba(11,16,13,.85)"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c">2023 — 2025</div><h3 style="margin:10px 0 6px;font-size:22px">Master of Computer Applications</h3><div style="color:#9fb0a5;font-size:16px;line-height:1.5">Nehru College of Engineering &amp; Research Centre, Kerala</div></div>
+        <div data-reveal="1" style="padding:28px;border-radius:16px;border:1px solid rgba(57,229,140,.16);background:rgba(11,16,13,.85)"><div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#39e58c">2020 — 2023</div><h3 style="margin:10px 0 6px;font-size:22px">Bachelor of Computer Applications</h3><div style="color:#9fb0a5;font-size:16px;line-height:1.5">Mar Osthatheos College, Perumpilavu, Kerala</div></div>
+      </div>
+      <div data-reveal="1" style="display:flex;flex-direction:column;border-top:1px solid rgba(57,229,140,.2)">
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(57,229,140,.12);transition:padding .25s,background .25s" style-hover="padding-left:14px;background:rgba(57,229,140,.05)"><span style="font-size:17px">Data Analytics Job Simulation</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7f9486;flex-shrink:0">Deloitte</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(57,229,140,.12);transition:padding .25s,background .25s" style-hover="padding-left:14px;background:rgba(57,229,140,.05)"><span style="font-size:17px">Data Science &amp; Analytics</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7f9486;flex-shrink:0">HP LIFE · 2025</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(57,229,140,.12);transition:padding .25s,background .25s" style-hover="padding-left:14px;background:rgba(57,229,140,.05)"><span style="font-size:17px">Agile Project Management</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7f9486;flex-shrink:0">HP LIFE · 2025</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(57,229,140,.12);transition:padding .25s,background .25s" style-hover="padding-left:14px;background:rgba(57,229,140,.05)"><span style="font-size:17px">Data Analysis with Excel</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7f9486;flex-shrink:0">Certification</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(57,229,140,.12);transition:padding .25s,background .25s" style-hover="padding-left:14px;background:rgba(57,229,140,.05)"><span style="font-size:17px">Introduction to MS Excel</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7f9486;flex-shrink:0">Simplilearn</span></div>
+        <div style="display:flex;justify-content:space-between;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(57,229,140,.12);transition:padding .25s,background .25s" style-hover="padding-left:14px;background:rgba(57,229,140,.05)"><span style="font-size:17px">Introduction to IoT</span><span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#7f9486;flex-shrink:0">NPTEL</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:90px 28px 40px">
+    <div data-reveal="1" style="display:flex;align-items:baseline;gap:16px;margin-bottom:20px;flex-wrap:wrap"><span style="font-family:'JetBrains Mono',monospace;color:#39e58c;font-size:15px">05</span><h2 style="margin:0;font-size:clamp(32px,4.5vw,52px);letter-spacing:-.03em">Curriculum vitae</h2><div style="flex:1;min-width:40px;height:1px;background:linear-gradient(90deg,rgba(57,229,140,.4),transparent)"></div><a href="assets/Mohammed-Anas-P-CV.pdf" download="Mohammed-Anas-P-CV.pdf" style="padding:12px 20px;background:#39e58c;color:#04120a;font-weight:600;border-radius:10px;font-size:14px;transition:transform .2s,box-shadow .2s" style-hover="transform:translateY(-2px);box-shadow:0 10px 30px rgba(57,229,140,.35);color:#04120a">Download PDF ↓</a></div>
+    <p data-reveal="1" style="margin:0 0 36px;color:#9fb0a5;font-size:16px;font-family:'JetBrains Mono',monospace">2 pages · click a page to open full size</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:28px">
+      <a data-reveal="1" href="assets/cv-page-1.png" target="_blank" style="position:relative;display:block;padding:14px;border-radius:18px;border:1px solid rgba(57,229,140,.2);background:#0b100d;transition:transform .35s,border-color .35s,box-shadow .35s" style-hover="transform:translateY(-6px);border-color:#39e58c;box-shadow:0 24px 60px -20px rgba(57,229,140,.35)">
+        <img src="assets/cv-page-1.png" alt="CV page 1" style="display:block;width:100%;height:auto;border-radius:8px;background:#fff">
+        <span style="position:absolute;top:26px;right:26px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#04120a;background:#39e58c;padding:4px 10px;border-radius:6px">01 / 02</span>
+      </a>
+      <a data-reveal="1" href="assets/cv-page-2.png" target="_blank" style="position:relative;display:block;padding:14px;border-radius:18px;border:1px solid rgba(57,229,140,.2);background:#0b100d;transition:transform .35s,border-color .35s,box-shadow .35s" style-hover="transform:translateY(-6px);border-color:#39e58c;box-shadow:0 24px 60px -20px rgba(57,229,140,.35)">
+        <img src="assets/cv-page-2.png" alt="CV page 2" style="display:block;width:100%;height:auto;border-radius:8px;background:#fff">
+        <span style="position:absolute;top:26px;right:26px;font-family:'JetBrains Mono',monospace;font-size:12px;color:#04120a;background:#39e58c;padding:4px 10px;border-radius:6px">02 / 02</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:110px 28px 60px">
+    <div data-reveal="1" style="position:relative;overflow:hidden;padding:clamp(36px,6vw,72px);border-radius:26px;border:1px solid rgba(57,229,140,.3);background:radial-gradient(ellipse at top right,rgba(57,229,140,.18),transparent 60%),#0b100d;display:flex;flex-direction:column;gap:26px">
+      <span style="font-family:'JetBrains Mono',monospace;color:#39e58c;font-size:14px">06 · contact</span>
+      <h2 style="margin:0;font-size:clamp(36px,6vw,72px);line-height:1;letter-spacing:-.035em;max-width:800px">Let's keep your systems <span style="color:#39e58c">running.</span></h2>
+      <p style="margin:0;color:#9fb0a5;font-size:18px;max-width:560px;line-height:1.6">Open to IT support, administration and Python development roles in Qatar and beyond.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:8px">
+        <a href="mailto:aanu4655@gmail.com" style="padding:20px;border-radius:14px;border:1px solid rgba(230,237,232,.14);background:rgba(7,10,8,.6);color:#e6ede8;display:flex;flex-direction:column;gap:6px;transition:border-color .25s,transform .25s" style-hover="border-color:#39e58c;transform:translateY(-3px);color:#e6ede8"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c">email</span><span style="font-size:16px">aanu4655@gmail.com</span></a>
+        <a href="tel:+97477493760" style="padding:20px;border-radius:14px;border:1px solid rgba(230,237,232,.14);background:rgba(7,10,8,.6);color:#e6ede8;display:flex;flex-direction:column;gap:6px;transition:border-color .25s,transform .25s" style-hover="border-color:#39e58c;transform:translateY(-3px);color:#e6ede8"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c">phone</span><span style="font-size:16px">+974 7749 3760</span></a>
+        <a href="https://github.com/Anasanu777" target="_blank" style="padding:20px;border-radius:14px;border:1px solid rgba(230,237,232,.14);background:rgba(7,10,8,.6);color:#e6ede8;display:flex;flex-direction:column;gap:6px;transition:border-color .25s,transform .25s" style-hover="border-color:#39e58c;transform:translateY(-3px);color:#e6ede8"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c">github</span><span style="font-size:16px">Anasanu777</span></a>
+        <a href="#" style="padding:20px;border-radius:14px;border:1px solid rgba(230,237,232,.14);background:rgba(7,10,8,.6);color:#e6ede8;display:flex;flex-direction:column;gap:6px;transition:border-color .25s,transform .25s" style-hover="border-color:#39e58c;transform:translateY(-3px);color:#e6ede8"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#39e58c">linkedin</span><span style="font-size:16px">Mohammed Anas P</span></a>
+      </div>
+    </div>
+    <footer style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:36px 4px 0;font-family:'JetBrains Mono',monospace;font-size:13px;color:#5d7466"><span>© 2026 Mohammed Anas P</span><span>Doha, Qatar · <a href="#top">back to top ↑</a></span></footer>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;photo&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;original&quot;,&quot;duotone&quot;],&quot;default&quot;:&quot;original&quot;,&quot;tsType&quot;:&quot;'duotone'|'original'&quot;},&quot;animations&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;}}">
+class Component extends DCLogic {
+  state = { typed: '' };
+  glowRef = React.createRef();
+  roles = ['IT Administrator', 'IT Support Specialist', 'Python Developer', 'Data & Records Organiser'];
+  componentDidMount() {
+    const motion = this.props.animations ?? true;
+    const els = Array.from(document.querySelectorAll('[data-reveal]'));
+    if (!motion) { this.setState({ typed: this.roles[0] }); return; }
+    const pending = new Set();
+    const show = el => { if (!pending.has(el)) return; pending.delete(el); el.style.opacity = '1'; el.style.transform = 'none'; setTimeout(() => { el.style.transition = ''; el.style.transform = ''; }, 900); };
+    const vh = window.innerHeight || 800;
+    els.forEach(el => {
+      if (el.getBoundingClientRect().top < vh * 0.95) return;
+      pending.add(el);
+      el.style.opacity = '0'; el.style.transform = 'translateY(28px)'; el.style.transition = 'opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1)';
+    });
+    this.check = () => { const h = window.innerHeight || 800; pending.forEach(el => { if (el.getBoundingClientRect().top < h * 0.92) show(el); }); };
+    window.addEventListener('scroll', this.check, { passive: true, capture: true });
+    window.addEventListener('resize', this.check);
+    try { this.io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && show(e.target)), { threshold: 0.1 }); pending.forEach(el => this.io.observe(el)); } catch (e) {}
+    this.fallback = setTimeout(() => pending.forEach(show), 4000);
+    this.onMove = e => { if (this.glowRef.current) this.glowRef.current.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`; };
+    window.addEventListener('mousemove', this.onMove);
+    let r = 0, i = 0, del = false;
+    const tick = () => {
+      const w = this.roles[r];
+      i += del ? -1 : 1;
+      this.setState({ typed: w.slice(0, i) });
+      let d = del ? 40 : 85;
+      if (!del && i === w.length) { del = true; d = 1800; }
+      else if (del && i === 0) { del = false; r = (r + 1) % this.roles.length; d = 350; }
+      this.t = setTimeout(tick, d);
+    };
+    this.t = setTimeout(tick, 600);
+  }
+  componentWillUnmount() { clearTimeout(this.t); clearTimeout(this.fallback); window.removeEventListener('scroll', this.check, true); window.removeEventListener('resize', this.check); this.io && this.io.disconnect(); window.removeEventListener('mousemove', this.onMove); }
+  renderVals() {
+    const duo = (this.props.photo ?? 'original') === 'duotone';
+    return {
+      typed: this.state.typed,
+      glowRef: this.glowRef,
+      photoStyle: { width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 20%', display: 'block', filter: duo ? 'grayscale(1) contrast(1.15) brightness(.95)' : 'none' },
+      tintStyle: { position: 'absolute', inset: 0, background: duo ? 'linear-gradient(180deg, rgba(57,229,140,.35), rgba(7,10,8,.55))' : 'linear-gradient(180deg, transparent 55%, rgba(7,10,8,.92))', mixBlendMode: duo ? 'multiply' : 'normal', pointerEvents: 'none' }
+    };
+  }
+}
+</script>
+</body>
+</html>
